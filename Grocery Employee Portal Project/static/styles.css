@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+h1, h2, h3 {
+    margin: 0 0 12px;
+}
+
+.auth-card {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background: #2c7be5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f66c0;
+}
+
+.auth-links {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-link {
+    display: inline-block;
+    background: #198754;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-link:hover {
+    background: #136d43;
+}
+
+.message {
+    min-height: 20px;
+    margin: 8px 0 0;
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.top-bar {
+    background: #fff;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.top-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.table-wrap,
+.billing-form-section {
+    margin: 24px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background: #eef3f9;
+}
+
+th,
+td {
+    border: 1px solid #d9e1ea;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td .row-actions {
+    display: flex;
+    gap: 8px;
+}
+
+td .row-actions button {
+    padding: 8px 10px;
+}
+
+.inline-form {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+}
+
+.bill-footer {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

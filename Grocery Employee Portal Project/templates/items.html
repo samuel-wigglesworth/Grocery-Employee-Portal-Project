@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="top-bar">
+        <h1>Items Page</h1>
+        <div class="top-actions">
+            <a href="{{ url_for('employees_page') }}" class="btn-link">Go to Employees Home</a>
+            <button id="logoutBtn">Log Out</button>
+        </div>
+    </header>
+
+    <section class="table-wrap">
+        <h2>Items List</h2>
+        <table id="itemsTable">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item ID</th>
+                    <th>Item Quantity</th>
+                    <th>Item Price</th>
+                    <th>Item Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="{{ url_for('static', filename='items.js') }}"></script>
+</body>
+</html>
